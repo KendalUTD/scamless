@@ -10,7 +10,7 @@ import anvil.media
 
 @anvil.server.callable
 def say_hello(name):
-
+  print(name)
   myPrompt = name + "\n"
 
   response = openai.Completion.create(
